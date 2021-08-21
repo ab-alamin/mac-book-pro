@@ -11,10 +11,13 @@
 <body>
     <section class="container">
         <div class="row">
+            <!-- image area start -->
             <div class="col-12 col-lg-6">
                 <img src="images/mac.png" class="d-block w-100 Sticky-top"  alt="">
             </div>
+            <!-- image area end -->
 
+                <!-- products details area start -->
             <div class="col-12 col-lg-6 pb-5">
                 <h2>Customize your Blue 24-inch iMac with Apple M1 chip. </h2>
                 <p>Apple M1 chip with 8-core CPU with 4 performance cores and 4 efficiency cores.7 cores GPU,And 16 core Nueral Engine 8gb unifiend memory 256gb SSD storage Two thunderbolt/ USB 4 ports magic mouse magic keyboard-US English.</p>
@@ -22,43 +25,45 @@
 
             <div class="pb-5">
                 <h2>Memory</h2>
-                <button type="button" class="btn btn-primary btn-lg">8 Gb Unified Memory</button>
-                <button type="button" class="btn btn-secondary btn-lg">16 Gb Unified Memory</button>
+                <button id="memory-1" type="button" class="btn btn-primary btn-lg">8 Gb Unified Memory</button>
+                <button id="memory-2" type="button" class="btn btn-secondary btn-lg">16 Gb Unified Memory</button>
 
             </div>
                  <div class="pb-5">
                 <h2>Storage</h2>
-                <button type="button" class="btn btn-primary btn-sm">256 Gb SSD storage</button>
-                <button type="button" class="btn btn-secondary btn-sm">512 Gb SSD storage</button>
-                <button type="button" class="btn btn-secondary btn-sm">1Tb SSD storage</button>
+                <button id="storage-1" class="btn btn-primary btn-sm">256 Gb SSD storage</button>
+                <button id="storage-2"  type="button" class="btn btn-secondary btn-sm">512 Gb SSD storage</button>
+                <button id="storage-3" type="button" class="btn btn-secondary btn-sm">1Tb SSD storage</button>
             </div>
                 
             <div class="pb-5">
                 <h2>Choose your delevery option</h2>
-                <button type="button" class="btn btn-primary btn-lg">8 Gb Unified Memory</button>
-                <button type="button" class="btn btn-secondary btn-lg">16 Gb Unified Memory</button>
+                <button id="delivery-1" type="button" class="btn btn-primary btn-lg">8 Gb Unified Memory</button>
+                <button id="delivery-2" type="button" class="btn btn-secondary btn-lg">16 Gb Unified Memory</button>
             </div>
-              
+            
+
+              <!-- products price area start -->
             <div class="pb-5">
               <table class="table fw-bold">
                 <tbody>
                 <tr>
                   <td colspan="2">Best Price</td>
-                  <td>$1299</td>
+                  <td>$<span id="best-price">1299</span></td>
                 </tr>
                 <tr>
                 <tr>
                   <td colspan="2">Extra Memory Cost</td>
-                  <td>$0</td>
+                  <td>$<span id="memory-cost">00</span></td>
                 </tr>
                 <tr>
                 <tr>
                   <td colspan="2">Extra storage cost</td>
-                  <td>$0</td>
+                  <td>$<span id="storage-cost">00</span></td>
                 </tr>
                 <tr>
                   <td colspan="2">Delevery Charge</td>
-                  <td>$0</td>
+                  <td>$<span id="delivery-cost">00</span></td>
                 </tr>
                 
               </tbody>
@@ -66,25 +71,38 @@
               <tfoot>
                 <tr>
                     <td colspan="2">total Price</td>
-                    <td>$1299</td>
+                    <td>$<span id="total-price">1299</span></td>
                   </tr>
               </tfoot>
               </table>
             </div>
+            <!-- products price area end -->
+
+            <!-- Discount area start -->
 
             <div>
                 <h4>Add promo code</h4>
                 <div class="input-group mb-3">
-                    <input type="text" class="form-control" aria-describedby="button-addon2">
-                    <button class="btn btn-outline-danger" type="button" id="button-addon2">Apply</button>
+                    <input id="promo-field" type="text" class="form-control" aria-describedby="button-addon2">
+                    <button id="promo-btn"  class="btn btn-outline-danger" type="button" id="button-addon2">Apply</button>
                   </div>
             </div>
+            <!-- Discount area end -->
 
             </div>
+
+            <!-- products details area end -->
+
             <hr>
+            <!-- Total area with discount start -->
             <div class="text-center">
-                <h2> Total : $<span id="total-price">1299</span>  </h2>
+                <h2> Total : $<span id="total-price-final">1299</span>  </h2>
             </div>
+               
+            </div>
+
+            <!-- Total area with discount start -->
+
         </div>
     </section>
 
