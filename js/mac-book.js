@@ -6,7 +6,7 @@ function btnClicked(btnID, costID, price) {
     });
 };
 
-// Function
+// Calculate total price Function
 function totalPrice() {
     const bestPrice = document.getElementById('best-price');
     const memoryCost = document.getElementById('memory-cost');
@@ -19,7 +19,7 @@ function totalPrice() {
     totalPriceFinal.innerHTML = totalPrice;
 }
 
-// Price Function
+// Calculate Price promo Function
 function finalPricePromo() {
     const promoField = document.getElementById('promo-field');
     const priceFinal = document.getElementById('total-price-final');
